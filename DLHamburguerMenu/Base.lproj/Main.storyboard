@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AEh-AD-jkx">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Demo Main Content View Controller-->
+        <scene sceneID="RW5-WC-pSR">
+            <objects>
+                <viewController id="p2E-Y9-WqY" customClass="DLDemoMainContentViewController" customModule="DLHamburguerMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="imj-vX-p6e"/>
+                        <viewControllerLayoutGuide type="bottom" id="42x-ap-D83"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2kU-DK-21v">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="linelessexample - cópia" translatesAutoresizingMaskIntoConstraints="NO" id="Fdd-m8-hGo">
+                                <rect key="frame" x="0.0" y="78" width="834" height="1034"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jv7-n6-Pdn">
+                                <rect key="frame" x="0.0" y="512" width="50" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="button"/>
+                                <connections>
+                                    <action selector="setLeftMenu:" destination="p2E-Y9-WqY" eventType="touchUpInside" id="qar-8O-Kkq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UE8-jK-iiE">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="CsN-Um-knO">
+                            <connections>
+                                <action selector="menuButtonTouched:" destination="p2E-Y9-WqY" id="IIM-vq-667"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vzh-9g-8Yz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832.37410071942452" y="-179.67625899280577"/>
+        </scene>
+        <!--Demo Root View Controller-->
+        <scene sceneID="vOm-05-wbO">
+            <objects>
+                <viewController id="AEh-AD-jkx" customClass="DLDemoRootViewController" customModule="DLHamburguerMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CXz-SR-SzZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="aKh-kY-RoJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LeG-IS-33X">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R1k-cu-oX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-719" y="-179"/>
+        </scene>
+        <!--Demo Menu View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="DLDemoMenuViewController" id="BYZ-38-t0r" customClass="DLDemoMenuViewController" customModule="DLHamburguerMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="listbar" translatesAutoresizingMaskIntoConstraints="NO" id="502-S9-t1F">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="502-S9-t1F" secondAttribute="trailing" id="4q7-4E-77m"/>
+                            <constraint firstItem="502-S9-t1F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BNh-Nm-wEl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="502-S9-t1F" secondAttribute="bottom" id="MkN-eg-Vhi"/>
+                            <constraint firstItem="502-S9-t1F" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Urq-WK-s4K"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.799999999999997" y="548.27586206896558"/>
+        </scene>
+        <!--Hamburguer Navigation Controller-->
+        <scene sceneID="W9c-C1-d9B">
+            <objects>
+                <navigationController storyboardIdentifier="DLDemoNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" id="CVL-OO-7o1" customClass="DLHamburguerNavigationController" customModule="DLHamburguerMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ctt-VV-dZU">
+                        <rect key="frame" x="0.0" y="20" width="834" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="p2E-Y9-WqY" kind="relationship" relationship="rootViewController" id="fIH-U1-FbA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GAj-rc-UxF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="-179"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button" width="281" height="494"/>
+        <image name="linelessexample - cópia" width="3024" height="4032"/>
+        <image name="listbar" width="116" height="730"/>
+    </resources>
+</document>
